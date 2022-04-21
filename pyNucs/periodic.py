@@ -11,7 +11,7 @@ dark_grey = QtGui.QColor(88, 89, 91)
 
 orange = QtGui.QColor(243, 112, 33)
 
-from elements_data import elements
+from .elements_data import elements
 
 element_width = 40
 element_height = 50
@@ -275,8 +275,18 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
 
         self.update_table()
 
-if __name__ == '__main__':
+def main_func():
     app = QtWidgets.QApplication(sys.argv)
     main = Ui_MainWindow()
     main.show()
     sys.exit(app.exec_())
+
+
+if __name__ == "__main__":
+    main_func()
+#
+#if __name__ == '__main__':
+#    app = QtWidgets.QApplication(sys.argv)
+#    main = Ui_MainWindow()
+#    main.show()
+#    sys.exit(app.exec_())

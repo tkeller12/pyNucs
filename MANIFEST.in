@@ -1,0 +1,2 @@
+include pyNucs/isotopes_data.csv
+include pyNucs/atomic_number_symbol_row_column.csv
