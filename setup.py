@@ -33,8 +33,8 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
     ],
-#    package_data= [('pyNucs', ['isotopes_data.csv'])],
-    data_files = [('pyNucs', ['pyNucs/isotopes_data.csv'])],
+    package_data= {'': ['*.csv']},
+#    data_files = [('pyNucs', ['pyNucs/isotopes_data.csv'])],
     include_package_data = True,
     entry_points=dict(
         console_scripts=[
